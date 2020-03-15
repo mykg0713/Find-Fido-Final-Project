@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/main.css">
+    <link rel="stylesheet" href="Styles/finder.css">
+    <title>Find Fido - Shelter Locator</title>
+
+</head>
+<body>
+    <header>
+    <div class="container">
+        <div id="branding">
+            <h1><span class="highlight">Find Fido</span> Pet Outreach</h1>
+        </div>
+        <nav>
+            <ul>
+                <li></li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li class="current"><a href="shelterfinder.html">Shelter Finder</a></li>
+            </ul>
+        </nav> 
+    </div>
+</header>
+
+
+<section id="newsletter">
+    <div class="container">
+        <h1>Subscribe to Our newsletter</h1>
+        <form action="ajax/contact.php" method="post" class="ajax">
+            <input type="email" name="email" placeholder="Enter Your Email...">
+            <button type="submit" class="button_1">Subscribe</button>
+        </form>
+    </div>
+</section>
+
+
+<input id="pac-input" class="controls" type="text" placeholder="Search Box">
+<div id="map"></div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbIpZAvM7Nqp3aCla-Mwz8xXK0KoNRaPk&libraries=places&callback=initAutocomplete"
+async defer></script>
+
+
+
+
+
+
+
+
+
+<footer>
+    <p>Find Fido - Pet Outreach, Copyright &copy; 2020</p>
+</footer>
+
+<script src="Java/finder.js"></script>
+
+
+
+    
+</body>
+</html>

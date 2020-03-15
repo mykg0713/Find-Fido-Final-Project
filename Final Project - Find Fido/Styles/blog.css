@@ -1,0 +1,115 @@
+body{
+    font-family: 'Oswald', sans-serif;
+    font-size:15px;
+    line-height: 1.5;
+    padding: 20px;
+    margin: auto;
+    background-color: #b4b4b4;
+    
+}
+  
+  /* Header/Blog Title */
+  header{
+      background:#35424a;
+      color:#ffffff;
+      padding-top:30px;
+      min-height: 70px;
+      border-bottom: #e8491d 3px solid;
+  
+}
+
+header a{
+    color:#ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+
+header li{
+    float:left;
+    display:inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float:left;
+}
+
+header #branding h1{
+    margin:0;
+}
+
+header nav{
+    float:right;
+    margin-top:10px;
+}
+
+header .highlight, header .current a{
+    color:#e8491d;
+    font-weight: bold;
+}
+
+header a:hover{
+    color:#cccccc;
+    font-weight: bold;
+}
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */ 
+  .fakeimg {
+    background-color: #e8491d
+    width: 100%;
+    padding: 20px;
+    
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+   
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .row{
+    font-weight: bold;
+  }
+  
+  
+  /* Footer */
+  footer{
+    padding:20px;
+    margin-top:20px;
+    color:#ffffff;
+    background-color:#e8491d;
+    text-align: center;
+}
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
